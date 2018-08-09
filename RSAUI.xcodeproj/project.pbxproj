@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F828919211BF300005BDA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F828918211BF300005BDA37 /* AppDelegate.swift */; };
+		2F82891B211BF300005BDA37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F82891A211BF300005BDA37 /* ViewController.swift */; };
+		2F82891D211BF300005BDA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F82891C211BF300005BDA37 /* Assets.xcassets */; };
+		2F828920211BF300005BDA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F82891E211BF300005BDA37 /* Main.storyboard */; };
+		2F82892C211BF300005BDA37 /* RSAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F82892B211BF300005BDA37 /* RSAUITests.swift */; };
+		2F828937211BF300005BDA37 /* RSAUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F828936211BF300005BDA37 /* RSAUIUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F828928211BF300005BDA37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F82890D211BF2FF005BDA37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F828914211BF2FF005BDA37;
+			remoteInfo = RSAUI;
+		};
+		2F828933211BF300005BDA37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F82890D211BF2FF005BDA37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F828914211BF2FF005BDA37;
+			remoteInfo = RSAUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F828915211BF300005BDA37 /* RSAUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSAUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F828918211BF300005BDA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F82891A211BF300005BDA37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F82891C211BF300005BDA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F82891F211BF300005BDA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F828921211BF300005BDA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F828922211BF300005BDA37 /* RSAUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RSAUI.entitlements; sourceTree = "<group>"; };
+		2F828927211BF300005BDA37 /* RSAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F82892B211BF300005BDA37 /* RSAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAUITests.swift; sourceTree = "<group>"; };
+		2F82892D211BF300005BDA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F828932211BF300005BDA37 /* RSAUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSAUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F828936211BF300005BDA37 /* RSAUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAUIUITests.swift; sourceTree = "<group>"; };
+		2F828938211BF300005BDA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F828912211BF2FF005BDA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F828924211BF300005BDA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F82892F211BF300005BDA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F82890C211BF2FF005BDA37 = {
+			isa = PBXGroup;
+			children = (
+				2F828917211BF300005BDA37 /* RSAUI */,
+				2F82892A211BF300005BDA37 /* RSAUITests */,
+				2F828935211BF300005BDA37 /* RSAUIUITests */,
+				2F828916211BF300005BDA37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F828916211BF300005BDA37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F828915211BF300005BDA37 /* RSAUI.app */,
+				2F828927211BF300005BDA37 /* RSAUITests.xctest */,
+				2F828932211BF300005BDA37 /* RSAUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F828917211BF300005BDA37 /* RSAUI */ = {
+			isa = PBXGroup;
+			children = (
+				2F828918211BF300005BDA37 /* AppDelegate.swift */,
+				2F82891A211BF300005BDA37 /* ViewController.swift */,
+				2F82891C211BF300005BDA37 /* Assets.xcassets */,
+				2F82891E211BF300005BDA37 /* Main.storyboard */,
+				2F828921211BF300005BDA37 /* Info.plist */,
+				2F828922211BF300005BDA37 /* RSAUI.entitlements */,
+			);
+			path = RSAUI;
+			sourceTree = "<group>";
+		};
+		2F82892A211BF300005BDA37 /* RSAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F82892B211BF300005BDA37 /* RSAUITests.swift */,
+				2F82892D211BF300005BDA37 /* Info.plist */,
+			);
+			path = RSAUITests;
+			sourceTree = "<group>";
+		};
+		2F828935211BF300005BDA37 /* RSAUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F828936211BF300005BDA37 /* RSAUIUITests.swift */,
+				2F828938211BF300005BDA37 /* Info.plist */,
+			);
+			path = RSAUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F828914211BF2FF005BDA37 /* RSAUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F82893B211BF300005BDA37 /* Build configuration list for PBXNativeTarget "RSAUI" */;
+			buildPhases = (
+				2F828911211BF2FF005BDA37 /* Sources */,
+				2F828912211BF2FF005BDA37 /* Frameworks */,
+				2F828913211BF2FF005BDA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSAUI;
+			productName = RSAUI;
+			productReference = 2F828915211BF300005BDA37 /* RSAUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F828926211BF300005BDA37 /* RSAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F82893E211BF300005BDA37 /* Build configuration list for PBXNativeTarget "RSAUITests" */;
+			buildPhases = (
+				2F828923211BF300005BDA37 /* Sources */,
+				2F828924211BF300005BDA37 /* Frameworks */,
+				2F828925211BF300005BDA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F828929211BF300005BDA37 /* PBXTargetDependency */,
+			);
+			name = RSAUITests;
+			productName = RSAUITests;
+			productReference = 2F828927211BF300005BDA37 /* RSAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F828931211BF300005BDA37 /* RSAUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F828941211BF300005BDA37 /* Build configuration list for PBXNativeTarget "RSAUIUITests" */;
+			buildPhases = (
+				2F82892E211BF300005BDA37 /* Sources */,
+				2F82892F211BF300005BDA37 /* Frameworks */,
+				2F828930211BF300005BDA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F828934211BF300005BDA37 /* PBXTargetDependency */,
+			);
+			name = RSAUIUITests;
+			productName = RSAUIUITests;
+			productReference = 2F828932211BF300005BDA37 /* RSAUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F82890D211BF2FF005BDA37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = sungrow;
+				TargetAttributes = {
+					2F828914211BF2FF005BDA37 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					2F828926211BF300005BDA37 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 2F828914211BF2FF005BDA37;
+					};
+					2F828931211BF300005BDA37 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 2F828914211BF2FF005BDA37;
+					};
+				};
+			};
+			buildConfigurationList = 2F828910211BF2FF005BDA37 /* Build configuration list for PBXProject "RSAUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F82890C211BF2FF005BDA37;
+			productRefGroup = 2F828916211BF300005BDA37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F828914211BF2FF005BDA37 /* RSAUI */,
+				2F828926211BF300005BDA37 /* RSAUITests */,
+				2F828931211BF300005BDA37 /* RSAUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F828913211BF2FF005BDA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F82891D211BF300005BDA37 /* Assets.xcassets in Resources */,
+				2F828920211BF300005BDA37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F828925211BF300005BDA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F828930211BF300005BDA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F828911211BF2FF005BDA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F82891B211BF300005BDA37 /* ViewController.swift in Sources */,
+				2F828919211BF300005BDA37 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F828923211BF300005BDA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F82892C211BF300005BDA37 /* RSAUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F82892E211BF300005BDA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F828937211BF300005BDA37 /* RSAUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F828929211BF300005BDA37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F828914211BF2FF005BDA37 /* RSAUI */;
+			targetProxy = 2F828928211BF300005BDA37 /* PBXContainerItemProxy */;
+		};
+		2F828934211BF300005BDA37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F828914211BF2FF005BDA37 /* RSAUI */;
+			targetProxy = 2F828933211BF300005BDA37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F82891E211BF300005BDA37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F82891F211BF300005BDA37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F828939211BF300005BDA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F82893A211BF300005BDA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2F82893C211BF300005BDA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RSAUI/RSAUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RSAUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.RSAUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2F82893D211BF300005BDA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RSAUI/RSAUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RSAUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.RSAUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		2F82893F211BF300005BDA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RSAUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.RSAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSAUI.app/Contents/MacOS/RSAUI";
+			};
+			name = Debug;
+		};
+		2F828940211BF300005BDA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RSAUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.RSAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSAUI.app/Contents/MacOS/RSAUI";
+			};
+			name = Release;
+		};
+		2F828942211BF300005BDA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RSAUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.RSAUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = RSAUI;
+			};
+			name = Debug;
+		};
+		2F828943211BF300005BDA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RSAUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.RSAUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = RSAUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F828910211BF2FF005BDA37 /* Build configuration list for PBXProject "RSAUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F828939211BF300005BDA37 /* Debug */,
+				2F82893A211BF300005BDA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F82893B211BF300005BDA37 /* Build configuration list for PBXNativeTarget "RSAUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F82893C211BF300005BDA37 /* Debug */,
+				2F82893D211BF300005BDA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F82893E211BF300005BDA37 /* Build configuration list for PBXNativeTarget "RSAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F82893F211BF300005BDA37 /* Debug */,
+				2F828940211BF300005BDA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F828941211BF300005BDA37 /* Build configuration list for PBXNativeTarget "RSAUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F828942211BF300005BDA37 /* Debug */,
+				2F828943211BF300005BDA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F82890D211BF2FF005BDA37 /* Project object */;
+}
