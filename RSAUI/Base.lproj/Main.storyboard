@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="RSAUI" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -682,13 +684,13 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                <windowController id="B8D-0N-5wS" customClass="MainWindow" customModule="RSAUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="RSAUI" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-			<connections>
+                        <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
@@ -703,15 +705,157 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="RSAUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="2317"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="n5B-Gp-m7l" customClass="YQGradientView" customModule="RSAUI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="64" height="2317"/>
+                                <subviews>
+                                    <stackView distribution="fillEqually" orientation="vertical" alignment="centerX" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbp-tY-TNm">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="2317"/>
+                                        <subviews>
+                                            <button translatesAutoresizingMaskIntoConstraints="NO" id="j6w-fL-Ypb">
+                                                <rect key="frame" x="16" y="1159" width="32" height="1158"/>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="lock_normal" imagePosition="only" alignment="center" alternateImage="lock" state="on" inset="2" id="iUt-Cf-i66">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="lock:" target="XfG-lQ-9wD" id="356-GG-MAg"/>
+                                                </connections>
+                                            </button>
+                                            <button translatesAutoresizingMaskIntoConstraints="NO" id="rPa-cI-a6C">
+                                                <rect key="frame" x="16" y="0.0" width="32" height="1159"/>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="unlock_normal" imagePosition="only" alignment="center" alternateImage="unlock" inset="2" id="N0z-Fk-Nz8">
+                                                    <behavior key="behavior" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="unlock:" target="XfG-lQ-9wD" id="Udy-kl-gUK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bbp-tY-TNm" secondAttribute="bottom" id="UXu-ug-EbD"/>
+                                    <constraint firstAttribute="trailing" secondItem="bbp-tY-TNm" secondAttribute="trailing" id="ln9-TR-B8W"/>
+                                    <constraint firstItem="bbp-tY-TNm" firstAttribute="leading" secondItem="n5B-Gp-m7l" secondAttribute="leading" id="nr9-44-v30"/>
+                                    <constraint firstAttribute="width" constant="64" id="sd2-s3-8Xr"/>
+                                    <constraint firstItem="bbp-tY-TNm" firstAttribute="top" secondItem="n5B-Gp-m7l" secondAttribute="top" id="uZu-la-ha9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lowGradientColor">
+                                        <color key="value" red="0.24313725490196078" green="0.27843137254901962" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highGradientColor">
+                                        <color key="value" red="0.24313725489999999" green="0.2784313725" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="cUY-VE-N7b" customClass="YQGradientView" customModule="RSAUI" customModuleProvider="target">
+                                <rect key="frame" x="64" y="0.0" width="476" height="2317"/>
+                                <subviews>
+                                    <stackView distribution="fillEqually" orientation="vertical" alignment="centerX" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogl-Av-Jjd">
+                                        <rect key="frame" x="16" y="16" width="444" height="2285"/>
+                                        <subviews>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="VS3-aF-AJr" customClass="YQDragDropView" customModule="RSAUI" customModuleProvider="target">
+                                                <rect key="frame" x="141" y="1649" width="163" height="636"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="拖拽待加密文件到这"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="addFile"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </customView>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="HIj-7h-mKW" customClass="YQDragDropView" customModule="RSAUI" customModuleProvider="target">
+                                                <rect key="frame" x="141" y="658" width="163" height="991"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="拖拽加密公钥文件到这"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="addFile"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </customView>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="fFG-7F-Adl" customClass="YQDragDropView" customModule="RSAUI" customModuleProvider="target">
+                                                <rect key="frame" x="141" y="22" width="163" height="636"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="拖拽解密私钥文件到这"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="addFile"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </customView>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="osc-WP-toL">
+                                                <rect key="frame" x="174" y="0.0" width="96" height="22"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="输入私钥文件访问密码" drawsBackground="YES" id="KPE-fB-B3V">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ogl-Av-Jjd" firstAttribute="leading" secondItem="cUY-VE-N7b" secondAttribute="leading" constant="16" id="FQk-w4-sbt"/>
+                                    <constraint firstAttribute="bottom" secondItem="ogl-Av-Jjd" secondAttribute="bottom" constant="16" id="J8J-wc-OWH"/>
+                                    <constraint firstItem="ogl-Av-Jjd" firstAttribute="top" secondItem="cUY-VE-N7b" secondAttribute="top" constant="16" id="tSX-y0-e84"/>
+                                    <constraint firstAttribute="trailing" secondItem="ogl-Av-Jjd" secondAttribute="trailing" constant="16" id="w6G-tx-htH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lowGradientColor">
+                                        <color key="value" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highGradientColor">
+                                        <color key="value" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cUY-VE-N7b" secondAttribute="trailing" id="5ag-Bi-7E0"/>
+                            <constraint firstItem="cUY-VE-N7b" firstAttribute="leading" secondItem="n5B-Gp-m7l" secondAttribute="trailing" id="I04-lY-dl1"/>
+                            <constraint firstAttribute="bottom" secondItem="n5B-Gp-m7l" secondAttribute="bottom" id="Idn-Y5-MJc"/>
+                            <constraint firstItem="n5B-Gp-m7l" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Oe9-pr-GT0"/>
+                            <constraint firstAttribute="bottom" secondItem="cUY-VE-N7b" secondAttribute="bottom" id="b81-8S-oAZ"/>
+                            <constraint firstItem="n5B-Gp-m7l" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="cie-Ea-u8g"/>
+                            <constraint firstItem="cUY-VE-N7b" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="xlR-aq-hc3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fileDragDropView" destination="VS3-aF-AJr" id="S6b-fe-UM0"/>
+                        <outlet property="inputPasswordTF" destination="osc-WP-toL" id="Cmp-Iu-iI1"/>
+                        <outlet property="privateDragDropView" destination="fFG-7F-Adl" id="Qv1-xp-kcF"/>
+                        <outlet property="publicDragDropView" destination="HIj-7h-mKW" id="Ckd-G0-RrC"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="105" y="1271.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="addFile" width="64" height="64"/>
+        <image name="lock" width="32" height="38"/>
+        <image name="lock_normal" width="32" height="38"/>
+        <image name="unlock" width="32" height="38"/>
+        <image name="unlock_normal" width="32" height="38"/>
+    </resources>
 </document>

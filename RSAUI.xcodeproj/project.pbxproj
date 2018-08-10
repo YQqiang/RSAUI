@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F7909D3211C3C910037F893 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7909D2211C3C910037F893 /* MainWindow.swift */; };
 		2F828919211BF300005BDA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F828918211BF300005BDA37 /* AppDelegate.swift */; };
 		2F82891B211BF300005BDA37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F82891A211BF300005BDA37 /* ViewController.swift */; };
 		2F82891D211BF300005BDA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F82891C211BF300005BDA37 /* Assets.xcassets */; };
 		2F828920211BF300005BDA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F82891E211BF300005BDA37 /* Main.storyboard */; };
 		2F82892C211BF300005BDA37 /* RSAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F82892B211BF300005BDA37 /* RSAUITests.swift */; };
 		2F828937211BF300005BDA37 /* RSAUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F828936211BF300005BDA37 /* RSAUIUITests.swift */; };
+		2F828948211BF32F005BDA37 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F828947211BF32F005BDA37 /* RSA.m */; };
+		2F82894C211BF4A2005BDA37 /* YQDragDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F82894A211BF4A1005BDA37 /* YQDragDropView.swift */; };
+		2F82894D211BF4A2005BDA37 /* YQGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F82894B211BF4A1005BDA37 /* YQGradientView.swift */; };
+		2FD6C609211D29B40040FE12 /* EnumeratorFileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6C607211D29B40040FE12 /* EnumeratorFileProtocol.swift */; };
+		2FD6C60A211D29B40040FE12 /* YQFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6C608211D29B40040FE12 /* YQFileModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F7909D2211C3C910037F893 /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
 		2F828915211BF300005BDA37 /* RSAUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSAUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F828918211BF300005BDA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F82891A211BF300005BDA37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +53,13 @@
 		2F828932211BF300005BDA37 /* RSAUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSAUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F828936211BF300005BDA37 /* RSAUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAUIUITests.swift; sourceTree = "<group>"; };
 		2F828938211BF300005BDA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F828945211BF32E005BDA37 /* RSAUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSAUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F828946211BF32F005BDA37 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		2F828947211BF32F005BDA37 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		2F82894A211BF4A1005BDA37 /* YQDragDropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDragDropView.swift; sourceTree = "<group>"; };
+		2F82894B211BF4A1005BDA37 /* YQGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQGradientView.swift; sourceTree = "<group>"; };
+		2FD6C607211D29B40040FE12 /* EnumeratorFileProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumeratorFileProtocol.swift; sourceTree = "<group>"; };
+		2FD6C608211D29B40040FE12 /* YQFileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQFileModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,7 @@
 		2F82890C211BF2FF005BDA37 = {
 			isa = PBXGroup;
 			children = (
+				2F828944211BF31E005BDA37 /* RSA */,
 				2F828917211BF300005BDA37 /* RSAUI */,
 				2F82892A211BF300005BDA37 /* RSAUITests */,
 				2F828935211BF300005BDA37 /* RSAUIUITests */,
@@ -96,7 +111,10 @@
 		2F828917211BF300005BDA37 /* RSAUI */ = {
 			isa = PBXGroup;
 			children = (
+				2FD6C606211D299B0040FE12 /* Model */,
+				2F828949211BF47B005BDA37 /* View */,
 				2F828918211BF300005BDA37 /* AppDelegate.swift */,
+				2F7909D2211C3C910037F893 /* MainWindow.swift */,
 				2F82891A211BF300005BDA37 /* ViewController.swift */,
 				2F82891C211BF300005BDA37 /* Assets.xcassets */,
 				2F82891E211BF300005BDA37 /* Main.storyboard */,
@@ -122,6 +140,34 @@
 				2F828938211BF300005BDA37 /* Info.plist */,
 			);
 			path = RSAUIUITests;
+			sourceTree = "<group>";
+		};
+		2F828944211BF31E005BDA37 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				2F828946211BF32F005BDA37 /* RSA.h */,
+				2F828947211BF32F005BDA37 /* RSA.m */,
+				2F828945211BF32E005BDA37 /* RSAUI-Bridging-Header.h */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		2F828949211BF47B005BDA37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F82894A211BF4A1005BDA37 /* YQDragDropView.swift */,
+				2F82894B211BF4A1005BDA37 /* YQGradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FD6C606211D299B0040FE12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FD6C607211D29B40040FE12 /* EnumeratorFileProtocol.swift */,
+				2FD6C608211D29B40040FE12 /* YQFileModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +238,12 @@
 				TargetAttributes = {
 					2F828914211BF2FF005BDA37 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					2F828926211BF300005BDA37 = {
 						CreatedOnToolsVersion = 9.4;
@@ -254,8 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F828948211BF32F005BDA37 /* RSA.m in Sources */,
 				2F82891B211BF300005BDA37 /* ViewController.swift in Sources */,
 				2F828919211BF300005BDA37 /* AppDelegate.swift in Sources */,
+				2F82894C211BF4A2005BDA37 /* YQDragDropView.swift in Sources */,
+				2F7909D3211C3C910037F893 /* MainWindow.swift in Sources */,
+				2FD6C609211D29B40040FE12 /* EnumeratorFileProtocol.swift in Sources */,
+				2F82894D211BF4A2005BDA37 /* YQGradientView.swift in Sources */,
+				2FD6C60A211D29B40040FE12 /* YQFileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RSAUI/RSAUI.entitlements;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RSAUI/Info.plist;
@@ -429,6 +487,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.RSAUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSA/RSAUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -437,7 +497,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RSAUI/RSAUI.entitlements;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RSAUI/Info.plist;
@@ -447,6 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.RSAUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSA/RSAUI-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
