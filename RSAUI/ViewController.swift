@@ -76,7 +76,7 @@ extension ViewController {
         let file = RSA.decryptString((try? String.init(contentsOfFile: filePath)), privateKeyWithContentsOfFile: p12FilePath, password: password)
         if let file = file, !file.isEmpty {
             try? file.write(toFile: filePath, atomically: true, encoding: .utf8)
-            showAlert("加密成功")
+            showAlert("解密成功")
         } else {
             showAlert("解密失败")
         }
