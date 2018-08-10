@@ -685,7 +685,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" customClass="MainWindow" customModule="RSAUI" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="RSAUI" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -707,17 +707,17 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="RSAUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="540" height="2317"/>
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="440"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="n5B-Gp-m7l" customClass="YQGradientView" customModule="RSAUI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="64" height="2317"/>
+                                <rect key="frame" x="0.0" y="0.0" width="64" height="440"/>
                                 <subviews>
                                     <stackView distribution="fillEqually" orientation="vertical" alignment="centerX" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbp-tY-TNm">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="2317"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="440"/>
                                         <subviews>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="j6w-fL-Ypb">
-                                                <rect key="frame" x="16" y="1159" width="32" height="1158"/>
+                                                <rect key="frame" x="16" y="220" width="32" height="220"/>
                                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="lock_normal" imagePosition="only" alignment="center" alternateImage="lock" state="on" inset="2" id="iUt-Cf-i66">
                                                     <behavior key="behavior" lightByContents="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -727,7 +727,7 @@
                                                 </connections>
                                             </button>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="rPa-cI-a6C">
-                                                <rect key="frame" x="16" y="0.0" width="32" height="1159"/>
+                                                <rect key="frame" x="16" y="0.0" width="32" height="220"/>
                                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="unlock_normal" imagePosition="only" alignment="center" alternateImage="unlock" inset="2" id="N0z-Fk-Nz8">
                                                     <behavior key="behavior" lightByContents="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -764,34 +764,34 @@
                                 </userDefinedRuntimeAttributes>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="cUY-VE-N7b" customClass="YQGradientView" customModule="RSAUI" customModuleProvider="target">
-                                <rect key="frame" x="64" y="0.0" width="476" height="2317"/>
+                                <rect key="frame" x="64" y="0.0" width="300" height="440"/>
                                 <subviews>
                                     <stackView distribution="fillEqually" orientation="vertical" alignment="centerX" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogl-Av-Jjd">
-                                        <rect key="frame" x="16" y="16" width="444" height="2285"/>
+                                        <rect key="frame" x="16" y="16" width="268" height="408"/>
                                         <subviews>
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="VS3-aF-AJr" customClass="YQDragDropView" customModule="RSAUI" customModuleProvider="target">
-                                                <rect key="frame" x="141" y="1649" width="163" height="636"/>
+                                                <rect key="frame" x="0.0" y="279" width="268" height="129"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="拖拽待加密文件到这"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="addFile"/>
                                                 </userDefinedRuntimeAttributes>
                                             </customView>
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="HIj-7h-mKW" customClass="YQDragDropView" customModule="RSAUI" customModuleProvider="target">
-                                                <rect key="frame" x="141" y="658" width="163" height="991"/>
+                                                <rect key="frame" x="0.0" y="151" width="268" height="128"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="拖拽加密公钥文件到这"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="addFile"/>
                                                 </userDefinedRuntimeAttributes>
                                             </customView>
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="fFG-7F-Adl" customClass="YQDragDropView" customModule="RSAUI" customModuleProvider="target">
-                                                <rect key="frame" x="141" y="22" width="163" height="636"/>
+                                                <rect key="frame" x="0.0" y="22" width="268" height="129"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="拖拽解密私钥文件到这"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="addFile"/>
                                                 </userDefinedRuntimeAttributes>
                                             </customView>
                                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="osc-WP-toL">
-                                                <rect key="frame" x="174" y="0.0" width="96" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="268" height="22"/>
                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="输入私钥文件访问密码" drawsBackground="YES" id="KPE-fB-B3V">
                                                     <font key="font" metaFont="system"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -816,6 +816,8 @@
                                 <constraints>
                                     <constraint firstItem="ogl-Av-Jjd" firstAttribute="leading" secondItem="cUY-VE-N7b" secondAttribute="leading" constant="16" id="FQk-w4-sbt"/>
                                     <constraint firstAttribute="bottom" secondItem="ogl-Av-Jjd" secondAttribute="bottom" constant="16" id="J8J-wc-OWH"/>
+                                    <constraint firstAttribute="height" constant="440" id="Tlg-d6-B8M"/>
+                                    <constraint firstAttribute="width" constant="300" id="hn6-eO-BV2"/>
                                     <constraint firstItem="ogl-Av-Jjd" firstAttribute="top" secondItem="cUY-VE-N7b" secondAttribute="top" constant="16" id="tSX-y0-e84"/>
                                     <constraint firstAttribute="trailing" secondItem="ogl-Av-Jjd" secondAttribute="trailing" constant="16" id="w6G-tx-htH"/>
                                 </constraints>
